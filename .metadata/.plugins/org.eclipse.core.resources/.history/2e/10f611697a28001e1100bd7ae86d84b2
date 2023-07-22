@@ -1,0 +1,29 @@
+package it.uniroma2.cap.events;
+
+import it.uniroma2.cap.federate.tipoPezzo;
+
+public class EventoRemotoA extends Event {
+	
+	private String startingRequest;
+
+	public EventoRemotoA(EventType type, Long time, String startingRequest) {
+		super(type, time);
+		this.startingRequest = startingRequest;
+	}	
+	
+	/**
+	 * @return il codice della startingRequest
+	 */
+	public String getStartingRequest() {
+		return startingRequest;
+	}
+
+	/**
+	 * @param codice della StartingRequest da inserire
+	 */
+	public void setStartingRequest(String startingRequest) {
+		this.startingRequest = startingRequest;
+	}
+
+
+}
